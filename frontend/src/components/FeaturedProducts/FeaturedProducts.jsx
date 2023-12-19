@@ -1,14 +1,14 @@
 import React from 'react';
 import "./FeaturedProducts.scss";
-import { Card } from '@mui/material';
+import Card from "../Card/Card";
 
 const FeaturesProducts = ({type}) => {
 
   const data=[
     {
       id:1,
-      img:"https://www.pexels.com/photo/smiling-woman-looking-upright-standing-against-yellow-wall-1536619/",
-      img2:"https://www.pexels.com/photo/woman-wearing-gray-shirt-holding-head-428338/",
+      img:"https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      img2:"https://images.pexels.com/photos/3689152/pexels-photo-3689152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title:"Long Sleeve Graphic T-shirt",
       isNew:true,
       oldPrice:19,
@@ -16,7 +16,7 @@ const FeaturesProducts = ({type}) => {
     },
     {
       id:2,
-      img:"https://www.pexels.com/photo/black-framed-eyeglasses-on-white-jacket-and-blue-denim-bottoms-934070/",
+      img:"https://images.pexels.com/photos/916148/pexels-photo-916148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title:"Coat",
       isNew:true,
       oldPrice:19,
@@ -24,7 +24,7 @@ const FeaturesProducts = ({type}) => {
     },
     {
       id:3,
-      img:"https://www.pexels.com/photo/close-up-on-woman-in-sweater-and-skirt-9947842/",
+      img:"https://images.pexels.com/photos/2864806/pexels-photo-2864806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title:"Skirt",
       
       oldPrice:19,
@@ -32,7 +32,7 @@ const FeaturesProducts = ({type}) => {
     },
     {
       id:4,
-      img:"https://www.pexels.com/photo/woman-wearing-sun-hat-601168/",
+      img:"https://images.pexels.com/photos/2804977/pexels-photo-2804977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title:"Hat",
       oldPrice:19,
       price:12,
@@ -41,7 +41,7 @@ const FeaturesProducts = ({type}) => {
 
 
   return (
-    <div className='featuredPsroducts'>
+    <div className='FeaturesProducts'>
         <div className='top'>
           <h1>{type} Products</h1>
           <p>
@@ -54,10 +54,10 @@ const FeaturesProducts = ({type}) => {
 
         </div>
         <div className='bottom'>
-          {data.map(item=>{
+          {data.map(item=>(
             <Card item={item} key={item.id}/>
 
-          })}
+          ))}
 
 
            
