@@ -12,14 +12,14 @@ const Contact = () => {
       <div className="wrapper">
         <span>BE IN TOUCH WITH US:</span>
         <div className="mail">
-            <input type="text" placeholder="Enter your e-mail..." />
+          <input type="text" placeholder="Enter your e-mail..." />
           <button>JOIN US</button>
         </div>
         <div className="icons">
-            <FacebookIcon />
+          <FacebookIcon />
           <InstagramIcon />
-            <TwitterIcon />
-            <GoogleIcon />
+          <TwitterIcon />
+          <GoogleIcon />
           <PinterestIcon />
         </div>
       </div>
