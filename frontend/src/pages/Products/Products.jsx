@@ -1,6 +1,6 @@
 import React from "react";
 import "./Products.scss";
-import List from "../../components/List/list";
+import List from "../../components/List/List";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import useFetch from "../../hooks/useFetch";
@@ -12,7 +12,7 @@ const Products = () => {
   const [selectedSubCats, setSelectedSubCats] = useState([]);
 
   const { data, loading, error } = useFetch(
-    `/sub-categories?[filters][categories][id][$eq]=${catId}`,
+    `/sub-categories?[filters][categories][id][$eq]=${catId}`
   );
 
   const handleChange = (e) => {
@@ -22,7 +22,7 @@ const Products = () => {
     setSelectedSubCats(
       isChecked
         ? [...selectedSubCats, value]
-        : selectedSubCats.filter((item) => item !== value),
+        : selectedSubCats.filter((item) => item !== value)
     );
   };
 
